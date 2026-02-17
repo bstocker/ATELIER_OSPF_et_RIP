@@ -213,60 +213,6 @@ Pourquoi une seule route apparaît-elle dans la table ?
 
 ---
 
-# 📘 CORRIGÉ ENSEIGNANT
-
-## Routes connectées
-- C = Connected  
-- AD = 0  
-
----
-
-## Routes statiques
-- AD = 1  
-- Prioritaires sur RIP/OSPF  
-
----
-
-## RIP
-- Lettre R  
-- AD = 120  
-- Métrique = nombre de sauts  
-
----
-
-## OSPF
-- Lettre O  
-- AD = 110  
-- Métrique = coût  
-
----
-
-## Règle d’or
-
-| Type | AD |
-|------|----|
-Connectée | 0 |
-Statique | 1 |
-EIGRP | 90 |
-OSPF | 110 |
-RIP | 120 |
-
-👉 Le routeur garde l’AD la plus faible.
-
----
-
-# 📝 Grille d’évaluation (/20)
-
-| Critère | Points |
-|--------|-------|
-Adressage correct | 4 |
-Routes statiques OK | 4 |
-RIP fonctionnel | 4 |
-OSPF fonctionnel | 4 |
-Explication AD | 4 |
-
----
-
 # ⭐ Bonus
 
 Configurer une **route flottante** :
@@ -277,15 +223,6 @@ ip route 192.168.2.0 255.255.255.0 10.0.14.2 130
 
 Question :
 Pourquoi n’est-elle utilisée qu’en secours ?
-
----
-
-# 🚀 Pour aller plus loin
-
-- Tester EIGRP  
-- Ajouter BGP  
-- Simuler des pannes de liens  
-- Observer la convergence
 
 ---
 
